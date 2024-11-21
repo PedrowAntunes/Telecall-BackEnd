@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  main {
+    display: flex;
+    flex: 1; /* Ocupa o espaço restante vertical */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  }
+
+/* ========== Formulário ========== */
+
+.container-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-img img {
+    width: 900px;
+    height: 800px;
+    border-radius: 50%;
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+    width: 650px;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.9);
+    border-radius: 50px;
+}
+
+.container h1 {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    height: 10%;
+    flex-direction: column;
+    padding: 5px;
+    background-color: #fff;
+    color: black;
+    border-radius: 30px;
+}
+
+.error-message {
+    display: block;
+    color: red;
+    margin-top: 4px;
+}
+
+.container-bttn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.readonly {
+  background-color: #a5abb1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
+}
+
+/* Media Query para dispositivos com largura máxima de 768px */
+@media (max-width: 1024px) {
+    .cabecalho-primario {
+        display: none;
+      }
+      .menu {
+        display: none;
+      }
+    .container-main {
+      flex-direction: column;
+      height: auto;
+      margin-right: 5%;
+      margin-left: 5%;
+    }
+  
+    .container-img img {
+      width: 50%;
+      height: auto;
+      margin: 0;
+    }
+  
+    .container {
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 40px;
+    }
+  }
